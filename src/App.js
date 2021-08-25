@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { decrement, increment, incrementByAmount } from './counterSlice'
+import { decrement, increment, setDelta } from './redux/counterSlice'
 import { Button, Input, Display } from './components'
 
 function App() {
@@ -19,17 +19,16 @@ function App() {
   */ 
 
   const count = useSelector((state) => state.counter.value)
+  const delta = useSelector((state) => state.counter.delta)
   const dispatch = useDispatch()
   
   return (
     <div className="App">
       <h1>Basic Counter with Redux!</h1>
       <Display>{count}</Display>
-      <Button onClick={() => dispatch(increment())}>+1</Button>
-      <Input></Input>
-      <Button onClick={() => dispatch(decrement())}>-1</Button>
-      <Button onClick={() => dispatch(incrementByAmount(10))}>+10</Button>
-
+      <Button onClick={() => dispatch(decrement())}>-</Button>
+      <Input value={delta} onChange={(event) => dispatch(setDelta(Number(event.target.value)))}></Input>
+      <Button onClick={() => dispatch(increment())}>+</Button>
     </div>
   );
 }

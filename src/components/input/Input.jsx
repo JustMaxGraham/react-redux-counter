@@ -4,11 +4,15 @@ import './input.css'
 const Input = ({
     children,
     type,
+    value,
+    placeholder,
     onChange
 }) => {
     return (
-        <input>
-        
+        <input 
+            onChange={onChange}
+            value={value}
+            placeholder={placeholder}>
         </input>
     )
 }
