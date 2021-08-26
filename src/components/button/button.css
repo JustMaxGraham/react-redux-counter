@@ -1,0 +1,22 @@
+button {
+	flex-grow: 1;
+	height: 4rem;
+	border: none;
+	border-radius: 1rem;
+	color: white;
+	font-size: 2rem;
+	opacity: 80%;
+	min-width: 4rem;
+}
+
+button:hover {
+	opacity: 100%;
+}
+
+.positive {
+	background-color: blue;
+}
+
+.negative {
+	background-color: red;
+}

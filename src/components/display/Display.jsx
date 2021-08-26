@@ -5,7 +5,7 @@ const Display = ({
     children,
 }) => {
     return (
-        <div>
+        <div className="counter">
             {children}
         </div>
     )

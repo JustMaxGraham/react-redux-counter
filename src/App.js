@@ -26,9 +26,11 @@ function App() {
     <div className="App">
       <h1>Basic Counter with Redux!</h1>
       <Display>{count}</Display>
-      <Button onClick={() => dispatch(decrement())}>-</Button>
-      <Input value={delta} onChange={(event) => dispatch(setDelta(Number(event.target.value)))}></Input>
-      <Button onClick={() => dispatch(increment())}>+</Button>
+      <div className="controls">
+        <Button buttonStyle="negative" onClick={() => dispatch(decrement())}>-</Button>
+        <Input value={delta} onChange={(event) => dispatch(setDelta(Number(event.target.value)))}></Input>
+        <Button buttonStyle="positive" onClick={() => dispatch(increment())}>+</Button>
+      </div>
     </div>
   );
 }

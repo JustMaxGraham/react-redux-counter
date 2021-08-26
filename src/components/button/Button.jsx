@@ -1,5 +1,10 @@
 import React from 'react';
-import "./button.css";
+import './button.css'
+
+const STYLES = [
+    'positive', 
+    'negative'
+];
 
 const Button = ({
      children,
@@ -9,8 +14,13 @@ const Button = ({
      buttonSize
 }
 ) => {
+
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
+
+    console.log("ButtonStyle: ", checkButtonStyle)
+
     return (
-        <button onClick={onClick} type={type}>
+        <button className={checkButtonStyle} onClick={onClick} type={type}>
             {children}
         </button>
     )
