@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Screenshot
 
-![alt text](./src/image/screenShot.png "Basic counter using react and redux toolkit")
+![alt text](./src/images/screenShot.png "Basic counter using react and redux toolkit")
 
 ## Available Scripts
 
