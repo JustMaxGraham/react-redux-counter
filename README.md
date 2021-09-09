@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Basic counter using Redux Toolkit and React
+
+A simple counter application that uses Redux. Users can specify the interval amount by changing the increment value between the - / + buttons, which will effect got much the counter changes by each button press
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Screenshot
+
+![alt text](./src/image/screenShot.png "Basic counter using react and redux toolkit")
 
 ## Available Scripts
 

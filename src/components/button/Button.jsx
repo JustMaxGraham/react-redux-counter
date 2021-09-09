@@ -11,7 +11,6 @@ const Button = ({
      type,
      onClick,
      buttonStyle,
-     buttonSize
 }
 ) => {
 

@@ -2,10 +2,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 23rem;
 }
 
 .controls {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+h1 {
+	color: #c75305;
 }

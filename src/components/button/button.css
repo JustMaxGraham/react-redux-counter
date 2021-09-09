@@ -1,12 +1,10 @@
 button {
-	flex-grow: 1;
 	height: 4rem;
 	border: none;
-	border-radius: 1rem;
 	color: white;
 	font-size: 2rem;
 	opacity: 80%;
-	min-width: 4rem;
+	width: 25%;
 }
 
 button:hover {
@@ -14,9 +12,9 @@ button:hover {
 }
 
 .positive {
-	background-color: blue;
+	background-color: #39bfd0;
 }
 
 .negative {
-	background-color: red;
+	background-color: #c95485;
 }

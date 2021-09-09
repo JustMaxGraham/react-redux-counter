@@ -24,7 +24,7 @@ function App() {
   
   return (
     <div className="App">
-      <h1>Basic Counter with Redux!</h1>
+      <h1>COUNTER WITH REDUX</h1>
       <Display>{count}</Display>
       <div className="controls">
         <Button buttonStyle="negative" onClick={() => dispatch(decrement())}>-</Button>
